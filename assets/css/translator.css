@@ -1,0 +1,14 @@
+/* 
+Translator 
+*/
+#google_translate_element
+{
+  margin-left: 10px;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+  } 
+body {
+  top: 0px !important; 
+  }

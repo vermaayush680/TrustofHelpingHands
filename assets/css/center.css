@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#center {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 82px;
+  }
+  
+  #center img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .social{
+    margin: 20px 0;
+  }
+  
+  .insta
+  {
+    /* background-color: hotpink; */
+    margin-left: 30px;
+    color: white;
+  
+  }
+  .insta:hover
+  {
+    color: hotpink;
+  }
+  .twit:hover
+  {
+    color: #66b3ff;
+  }
+  .face:hover
+  {
+    color: #0080ff;
+  }
+  .face
+  {
+    /* background-color: hotpink; */
+    margin-left: 50px;
+    color: white;
+  }
+  
+  .twit
+  {
+    /* background-color: hotpink; */
+    margin-left: 30px;
+    color: white;
+  }
+  
+  #center:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #center h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #f1f1f1;
+  }
+  
+  #center h2 {
+    color: #f1f1f1;
+    margin: 5px 0;
+    font-size: 24px;
+  }
+  
+  #center .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #f1f1f1;
+    background: #ff3399;
+    border: 2px solid #ff3399;
+  }
+  
+  #center .btn-get-started:hover {
+    background: transparent;
+    border-color: #f1f1f1;
+  }
+  
+  @media (max-height: 500px) {
+    #center {
+      height: 120vh;
+    }
+  }

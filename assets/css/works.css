@@ -1,0 +1,190 @@
+/*--------------------------------------------------------------
+# works
+--------------------------------------------------------------*/
+.works .works-item {
+    margin-bottom: 30px;
+  }
+  
+  .works #works-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .works #works-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+  
+  .works #works-flters li:hover, .works #works-flters li.filter-active {
+    color: #f1f1f1;
+    background: #ff3399;
+  }
+  
+  .works #works-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  .works .works-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(17, 17, 17, 0.6);
+  }
+  
+  .works .works-wrap::before {
+    content: "";
+    background: rgba(17, 17, 17, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .works .works-wrap img {
+    transition: all ease-in-out 0.3s;
+    max-height:250px;
+    min-height:250px;
+    max-width: 370px;
+    min-width: 370px;
+  }
+  
+  .works .works-wrap .works-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .works .works-wrap .works-info h4 {
+    font-size: 20px;
+    color: #f1f1f1;
+    font-weight: 600;
+  }
+  
+  .works .works-wrap .works-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .works .works-wrap .works-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .works .works-wrap .works-links a {
+    color: rgba(255, 255, 255, 0.4);
+    margin: 5px 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .works .works-wrap .works-links a:hover {
+    color: #f1f1f1;
+  }
+  
+  .works .works-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .works .works-wrap:hover img {
+    transform: scale(1.2);
+  }
+  
+  .works .works-wrap:hover .works-info {
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # works Details
+  --------------------------------------------------------------*/
+  .works-details {
+    padding-top: 40px;
+  }
+  
+  .works-details .works-details-slider img {
+    width: 100%;
+  }
+  
+  .works-details .works-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .works-details .works-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #f1f1f1;
+    opacity: 1;
+    border: 1px solid #ff3399;
+  }
+  
+  .works-details .works-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ff3399;
+  }
+  
+  .works-details .works-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(17, 17, 17, 0.08);
+  }
+  
+  .works-details .works-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .works-details .works-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
+  
+  .works-details .works-info ul li + li {
+    margin-top: 10px;
+  }
+  
+  .works-details .works-description {
+    padding-top: 30px;
+  }
+  
+  .works-details .works-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .works-details .works-description p {
+    padding: 0;
+  }
